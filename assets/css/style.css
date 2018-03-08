@@ -1,0 +1,19 @@
+.slider1{
+    text-align: center;
+    background-color: lightgreen;
+}
+
+.slider2{
+    text-align: center;
+    background-color: lightblue;
+}
+
+.slider3{
+    text-align: center;
+    background-color: lightcoral;
+
+}
+
+.controlArrow{
+    width: 1em;
+}

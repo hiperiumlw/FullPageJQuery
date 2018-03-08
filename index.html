@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FullPageJQuery</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+    <link type="text/css" rel="stylesheet" href="bower_components/fullpage.js/jquery.fullPage.css">
+</head>
+<body>
+<div id="fullpage">
+    <div class="section slider1" data-anchor="slider1_1">
+        <div class="slide"> Diapositiva 1 </div>
+        <div class="slide"> Diapositiva 2 </div>
+        <div class="slide"> Diapositiva 3 </div>
+        <div class="slide"> Diapositiva 4 </div></div>
+    <div class="section slider2" >Slider 2</div>
+    <div class="section slider3" >Slider 3</div>
+</div>
+<ul id="myMenu">
+    <li data-menuanchor="slider1_1" class="active"><a href="#firstPage">First section</a></li>
+    <li data-menuanchor="slider2_2"><a href="#secondPage">Second section</a></li>
+    <li data-menuanchor="slider3_3"><a href="#thirdPage">Third section</a></li>
+
+</ul>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            //Navegación
+            menu: '#menu',
+            lockAnchors: false,
+            anchors:['slider1_1', 'slider2_2','slider3_3'],
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['Slider1', 'Slider2','Slider3'],
+            showActiveTooltip: false,
+            slidesNavigation: false,
+            slidesNavPosition: 'bottom',
+        });
+    });
+</script>
+</body>
+</html>
